@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chocolate Cake Recipe</title>
+</head>
+<body>
+    <div class="recipe-card">
+        <h1 class="recipe-title">Chocolate Cake</h1>
+        <img src="choco.jpg" alt="Chocolate Cake" class="recipe-image">
+        <div class="info">
+            <p>Preparation Time: <span id="prep-time">30 minutes</span></p>
+            <p>Serving Size: <span id="serving-size">8 servings</span></p>
+        </div>
+        <button class="toggle-button" id="toggle-ingredients">Show Ingredients</button>
+        <ul class="ingredients" id="ingredients">
+            <li class="ingredient">2 cups sugar</li>
+            <li class="ingredient">1 and 3/4 cups flour</li>
+            <li class="ingredient">3/4 cup cocoa powder</li>
+            <li class="ingredient">1 and 1/2 teaspoons baking powder</li>
+            <li class="ingredient">1 and 1/2 teaspoons baking soda</li>
+            <li class="ingredient">1 teaspoon salt</li>
+            <li class="ingredient">2 eggs</li>
+            <li class="ingredient">1 cup milk</li>
+            <li class="ingredient">1/2 cup vegetable oil</li>
+            <li class="ingredient">2 teaspoons vanilla extract</li>
+            <li class="ingredient">1 cup boiling water</li>
+        </ul>
+        <button class="toggle-button" id="toggle-steps">Show Steps</button>
+        <ol class="steps" id="steps">
+            <li class="step">Preheat the oven to 350°F (175°C).</li>
+            <li class="step">In a bowl, mix all the dry ingredients.</li>
+            <li class="step">Add eggs, milk, oil, and vanilla extract, mix well.</li>
+            <li class="step">Stir in boiling water until well combined.</li>
+            <li class="step">Pour batter into greased pans and bake for 30-35 minutes.</li>
+            <li class="step">Cool and frost as desired.</li>
+        </ol>
+        <button class="start-button" id="start-cooking">Start Cooking</button>
+        <div class="progress-bar" id="progress-bar"></div>
+        <div id="timer" class="timer">Time Left: <span id="time-left">30:00</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

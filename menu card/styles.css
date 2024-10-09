@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url('path/to/your/cake-image.jpg'); /* Background image */
+    background-size: cover; /* Cover the whole body */
+    background-position: center; /* Center the image */
+}
+
+.recipe-card {
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.2s;
+    backdrop-filter: blur(10px); /* Blurs the background behind the card */
+}
+
+.recipe-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Bold title */
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    border-radius: 8px;
+    object-fit: cover; /* Maintains aspect ratio */
+    border: 2px solid #e0e0e0; /* Light border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.info {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 16px; /* Larger font size for readability */
+}
+
+.toggle-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #4cae4c;
+}
+
+.ingredients, .steps {
+    display: none;
+    margin: 10px 0;
+}
+
+.ingredients li, .steps li {
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.ingredients li:hover, .steps li:hover {
+    color: #5cb85c;
+}
+
+.progress-bar {
+    width: 0;
+    height: 5px;
+    background: #5cb85c;
+    transition: width 0.3s;
+    margin: 20px 0;
+}
+
+.timer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size for better visibility */
+}
+
+@media (max-width: 600px) {
+    .recipe-card {
+        padding: 10px;
+    }
+
+    .toggle-button {
+        width: 90%;
+    }
+
+    .progress-bar {
+        height: 3px;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+    .toggle-button, .start-button {
+        display: none;
+    }
+    .progress-bar, .timer {
+        display: none;
+    }
+}
